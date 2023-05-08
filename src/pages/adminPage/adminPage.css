@@ -1,0 +1,39 @@
+.input_news {
+    padding: 30px;
+}
+
+#mainTitle {
+    height: 50px;
+}
+
+.input_news input {
+    border: 1px solid grey;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.input_news #paragraf1, #paragraf2, #paragraf3 {
+    height: 200px;
+    white-space: pre-wrap;
+}
+
+.input_news #paragraf1, #paragraf2, #paragraf3, #mainTitle {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 10px;
+    margin-top: 10px;
+    white-space: pre-wrap;
+}
+
+.input_news button {
+    margin-top: 10px;
+    width: 10%; 
+}
+
+.warning {
+    color: red;
+    font-size: 15px;
+    margin: 20px 0px 100px 0px;
+}

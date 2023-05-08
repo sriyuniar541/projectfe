@@ -1,0 +1,59 @@
+/* register dan login*/
+.bacground_register,
+.bacground_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bacground_register {
+  padding: 10px;
+}
+
+.page_register,
+.page_login {
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px rgb(187, 186, 186);
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.page_register input,
+.page_login input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(221, 214, 214);
+}
+
+.page_register p,
+.page_login p {
+  color: red;
+  line-height: 5px;
+  margin-top: 15px;
+  text-align: start;
+}
+
+/* register */
+.page_register .input_photo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.page_register {
+  padding: 50px;
+}
+
+
+/* login */
+.bacground_login {
+  margin-top: 50px;
+}
+
+.page_login {
+  padding: 100px 50px 100px 50px;
+}
