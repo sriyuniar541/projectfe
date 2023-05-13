@@ -18,7 +18,7 @@ const PageAti1 = () => {
               alt="bacground"
               className="bg_landing img-fluid"
             />
-            <p>
+            <p className="text-center">
               Gambar oleh{" "}
               <a href="https://pixabay.com/id/users/silviarita-3142410/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4118058">
                 Silvia
