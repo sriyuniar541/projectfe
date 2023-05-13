@@ -17,7 +17,7 @@
     white-space: pre-wrap;
 }
 
-.input_news #paragraf1, #paragraf2, #paragraf3, #mainTitle {
+.input_news #paragraf1, #paragraf2, #paragraf3, #mainTitle, .btn_subTema {
     width: 100%;
     box-sizing: border-box;
     border-radius: 10px;

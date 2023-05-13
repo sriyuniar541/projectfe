@@ -59,7 +59,7 @@ const PageById = () => {
             <div className="content">
               <p>{dataById.maincontent}</p>
               <p>{dataById.content1 != null ? dataById.content1 : ''}</p>
-              <h5>{data.titlecontent2 != null ? data.titlecontent2 : ''}</h5>
+              <h5>{dataById.titlecontent2 != null ? dataById.titlecontent2 : ''}</h5>
               <p>{dataById.content2 != null ? dataById.content2 : ''}</p>
               <h5>{dataById.titlecontent3 != null ? dataById.titlecontent3 : ''}</h5>
               <p>{dataById.content3 != null ? dataById.content3 : ''}</p>

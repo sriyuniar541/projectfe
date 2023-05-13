@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./adminPage.css";
 import axios from "axios";
 
+
 const AdminPage = () => {
   const api_key = process.env.REACT_APP_API_KEY_BE;
   const token = localStorage.getItem("token");
@@ -14,14 +15,11 @@ const AdminPage = () => {
     content2: "",
     titleContent3: "",
     content3: "",
-    titleContent4: null,
-    content4: null,
-    titleContent5: null,
-    content5: null,
     users_id: users_id.id,
     subTema: "",
   });
   const [bacgroundPhoto, setBacgroundPhoto] = useState(null);
+  const [isLoading,setIsLoading] = useState(false)
 
   const inputHandle = (e) => {
     e.preventDefault();
@@ -61,8 +59,8 @@ const AdminPage = () => {
         })
       })
       .catch((err) => {
-        console.log(err, "Insert data fail");
-        alert(err.response.data.data);
+        console.log(err.response, "Insert data fail");
+        alert('Sesi anda berakhir silahkan login lagi');
       });
   };
 
@@ -110,7 +108,7 @@ const AdminPage = () => {
         {/* paragraf 2 */}
         <textarea
           id="mainTitle"
-          placeholder="Judul paragraf 2"
+          placeholder="Sub Judul paragraf 2"
           onChange={onChangeHandler}
           name="titleContent2"
           value={inputData.titleContent2}
@@ -125,7 +123,7 @@ const AdminPage = () => {
         {/* paragraf 3 */}
         <textarea
           id="mainTitle"
-          placeholder="Judul paragraf 3"
+          placeholder="Sub Judul paragraf 3"
           onChange={onChangeHandler}
           name="titleContent3"
           value={inputData.titleContent3}
@@ -139,23 +137,25 @@ const AdminPage = () => {
         />
         <input
           type="text"
-          // id="mainTitle"
+          placeholder="content artikel"
           onChange={onChangeHandler}
           name="subTema"
           value={inputData.subTema}
+          className="btn_subTema"
         />
         <button className="btn btn-primary" onClick={inputHandle}>
           Save
         </button>
       </div>
       <div className="warning">
-        <p>Warning</p>
+        <p>Warning...!</p>
         <li>Bacground photo wajib diisi</li>
-        <li>silahkan lakukan pengisian data-data yang dibutuhkan</li>
+        <li>Silahkan lakukan pengisian data-data yang dibutuhkan</li>
         <li>
-          bisa hanya satu paragraf, dan bisa juga lebih, tidak boleh lebih dari
-          3 paragraf
+          Bisa hanya satu paragraf dan bisa juga lebih, tidak boleh lebih dari
+          2 paragraf
         </li>
+        <li> Untuk content artikel ketik 1 jika artikel ini content kesehatan, dan ketik 2 jika artikel ini selain kesehatan</li>
       </div>
     </div>
   );

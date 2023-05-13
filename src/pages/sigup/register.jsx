@@ -118,7 +118,7 @@ const Register = () => {
           />
           <input
             type="select"
-            placeholder="Role"
+            placeholder="Role ketik 1 / 2"
             value={inputData.role}
             name="role"
             onChange={onChangeHandler}
@@ -128,7 +128,8 @@ const Register = () => {
             Register
           </button>
           <p>Warning........!</p>
-          <p>Semua inputan dan phhoto wajib diisi</p>
+          <p>Semua inputan dan photo wajib diisi</p>
+          <p>Role ketik 1 untuk kesehatan dan 2 untuk selain kesehatan</p>
         </div>
       </div>
     </div>

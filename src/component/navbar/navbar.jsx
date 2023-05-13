@@ -9,7 +9,7 @@ function NavbarLandingPage() {
   return (
     <Navbar expand="lg" className="fixed-top nav_landing">
       <Container className="container bg-white">
-        <Navbar.Brand href=" ">HalloDunia</Navbar.Brand>
+        <Navbar.Brand href="">HalloDunia</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

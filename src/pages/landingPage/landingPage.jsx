@@ -36,19 +36,19 @@ const LandingPage = () => {
         <div className="row">
           <div className="col-lg-8 main_content">
             <img
-              // src={data?data.bacgroundphoto : gambarTes1}
-              src={gambarTes1}
+              src={data ? data.bacgroundphoto : gambarTes1}
+              // src={gambarTes1}
               alt="bacground"
               className="bg_landing img-fluid"
             />
             <h2>{data.title}</h2>
             <div className="content">
-            <p>{data.maincontent}</p>
-              <p>{data.content1 != null ? data.content1 : ''}</p>
-              <h5>{data.titlecontent2 != null ? data.titlecontent2 : ''}</h5>
-              <p>{data.content2 != null ? data.content2 : ''}</p>
-              <h5>{data.titlecontent3 != null ? data.titlecontent3 : ''}</h5>
-              <p>{data.content3 != null ? data.content3 : ''}</p>
+              <p>{data.maincontent}</p>
+              <p>{data.content1 != null ? data.content1 : ""}</p>
+              <h5>{data.titlecontent2 != null ? data.titlecontent2 : ""}</h5>
+              <p>{data.content2 != null ? data.content2 : ""}</p>
+              <h5>{data.titlecontent3 != null ? data.titlecontent3 : ""}</h5>
+              <p>{data.content3 != null ? data.content3 : ""}</p>
             </div>
           </div>
           <div className="col-lg-4 mt-lg-0 mt-4">

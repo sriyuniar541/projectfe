@@ -29,10 +29,21 @@ const Login = () => {
       });
       navigate("/artikel/admin");
       localStorage.setItem("token", res.data.token);
-      localStorage.setItem('user', JSON.stringify(res.data))
-    } else {
-      alert(res.data);
-      console.log(res.data, res);
+      localStorage.setItem("user", JSON.stringify(res.data));
+    } 
+    if (inputData.email === "") {
+      return alert("Email cannot be empty");
+    } 
+    if (inputData.password === "") {
+      return alert("Password cannot be empty");
+    } 
+    if (res.message == null) {
+      alert("Wrong Password");
+      console.log(res);
+    } 
+    else {
+      alert(res.message);
+      console.log(res);
     }
   };
 
