@@ -15,6 +15,7 @@ const PageDian1 = () => {
           <div className="col-lg-8 main_content">
             <img src={gizi} alt="bacground" className="bg_landing img-fluid" />
             <h2>Pentingnya Nutrisi untuk Kesehatan</h2>
+            <p className="text-secondary author">Author : Dian Wijayanti, A. Md, Rd (Ahli Gizi)</p>
             <div className="content">
               <p>
                 Selama beberapa dekade terakhir, di seluruh dunia telah terjadi

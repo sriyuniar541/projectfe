@@ -27,6 +27,11 @@ body {
   margin-bottom: 15px;
 }
 
+.author {
+  font-style: italic;
+  font-size: 15px;
+}
+
 .content {
   text-align: justify;
   width: 100%;

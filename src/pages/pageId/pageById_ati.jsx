@@ -30,8 +30,9 @@ const PageAti1 = () => {
             </p>
             <h2>
               Tips dan Trik bagi Mahasiswa Akhir dalam Menyelesaikan Skripsi dan
-              Proses Pengolahan Data
+              Proses Pengolahan Data  
             </h2>
+            <p className="text-secondary author">Author : Beatric Tayanan</p>
             <div className="content">
               <p>
                 Mahasiswa akhir adalah fase terakhir dalam menempuh pendidikan
