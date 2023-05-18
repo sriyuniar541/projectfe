@@ -6,6 +6,7 @@ import Footer from "../../component/footer/footer";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
+
 const LandingPage = () => {
   const [data, setData] = useState([]);
   const [dataById, setDataById] = useState([]);
