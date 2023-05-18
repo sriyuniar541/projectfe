@@ -27,7 +27,7 @@ const PageAti1 = () => {
               <a href="https://pixabay.com/id//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4118058">
                 Pixabay
               </a>
-            </p>
+            </p> 
             <h2>
               Tips dan Trik bagi Mahasiswa Akhir dalam Menyelesaikan Skripsi dan
               Proses Pengolahan Data  
