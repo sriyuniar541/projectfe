@@ -22,8 +22,8 @@ const Jualan = () => {
       <div className="container manfaat ">
         <div className="list_manfaat col-10">
           <h2>MANFAAT</h2>
-          <Accordion defaultActiveKey="0">
-            <Accordion.Item eventKey="0">
+          <Accordion defaultActiveKey="">
+            <Accordion.Item className="acordion" eventKey="0">
               <Accordion.Header>Baik untuk jantung</Accordion.Header>
               <Accordion.Body>
                 Susu kambing diketahui mengandung asam lemak tak jenuh tunggal
@@ -68,7 +68,7 @@ const Jualan = () => {
                 kalsium.
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="1">
+            <Accordion.Item className="acordion" eventKey="1">
               <Accordion.Header>Menjaga kesehatan sel tubuh</Accordion.Header>
               <Accordion.Body>
                 Selain membantu mengendalikan tekanan darah, kalium pada susu
@@ -83,7 +83,7 @@ const Jualan = () => {
                 yang mengatur suasana hati.
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="2">
+            <Accordion.Item className="acordion" eventKey="2">
               <Accordion.Header>
                 Mendukung kesehatan sistem pencernaan
               </Accordion.Header>
@@ -115,7 +115,7 @@ const Jualan = () => {
                 khususnya yang terjadi pada sistem pencernaan.
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="3">
+            <Accordion.Item className="acordion" eventKey="3">
               <Accordion.Header>Melawan inflamasi</Accordion.Header>
               <Accordion.Body>
                 Jika kita mengalami gangguan kesehatan yang disebabkan oleh
@@ -130,7 +130,7 @@ const Jualan = () => {
                 irritable bowel syndrome.
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="4">
+            <Accordion.Item className="acordion" eventKey="4">
               <Accordion.Header>
                 Meningkatkan pH dalam tubuh yang memperkuat kekebalan tubuh
               </Accordion.Header>
@@ -154,7 +154,7 @@ const Jualan = () => {
                 susu kambing.
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="5">
+            <Accordion.Item className="acordion" eventKey="5">
               <Accordion.Header>Membantu tidur lebih nyenyak</Accordion.Header>
               <Accordion.Body>
                 Asam amino triptofan yang terkandung pada susu kambing akan
@@ -166,7 +166,7 @@ const Jualan = () => {
                 tidur dengan mudah dan tidur sepanjang malam
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="6">
+            <Accordion.Item className="acordion" eventKey="6">
               <Accordion.Header>
                 Manfaat susu kambing untuk kulit
               </Accordion.Header>
@@ -187,7 +187,7 @@ const Jualan = () => {
                 dijadikan salah satu remedi untuk jerawat.
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="7">
+            <Accordion.Item className="acordion" eventKey="7">
               <Accordion.Header>
                 Mencegah Pengeroposan Tulang dan Anemia
               </Accordion.Header>
