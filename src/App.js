@@ -7,6 +7,8 @@ import Login from "./pages/sigup/login";
 import Register from "./pages/sigup/register";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AuthChecker from "./component/authchecker/auth_checker";
+import Jualan from "./pages/websiteJualanSusu/jualan";
+
 
 function App() {
   return (
@@ -32,6 +34,10 @@ function App() {
           <Route
             path="/TipsdanTrikbagiMahasiswaAkhirdalamMenyelesaikanSkripsidanProsesPengolahanData"
             element={<PageAti1 />}
+          />
+          <Route
+            path="/susuEtawa"
+            element={<Jualan />}
           />
           <Route path="*" element={<page not Found />} />
         </Routes>
