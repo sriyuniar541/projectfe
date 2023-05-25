@@ -1,22 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+
 .jualan {
-    background-image: url('../../aset/bacground\ \(2\).png');
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 50px 0 50px 0;
     overflow: hidden;
 }
 
+.page_jualan h2 {
+    font-family: 'Potta One', sans-serif;
+    color : #AFEEEE;
+}
+
+h2 {
+    font-family: 'Potta One', sans-serif;
+}
+
+.learn_more {
+    background-color: #AFEEEE;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color: white;
+    
+
+}
+
+.card_bacground img {
+    width: 80%;
+}
+
+.card_bacground {
+    display: flex;
+    justify-content: end;
+}
+
+.card_bacground_2 {
+    box-sizing: border-box;
+    padding: 60px;
+}
+
 .cart_petama {
-    background-color: rgba(243, 240, 240, 0.8);
+    /* background-color: rgba(243, 240, 240, 0.8); */
     padding: 50px;
     border-radius: 0px 50px 0px 50px;
     text-align: center;
     box-shadow: 1px 4px 4px rgba(187, 180, 180,.8);
     border: 1px solid rgb(241, 233, 233);
+}
+
+.author_jualan {
+    line-height: 10px;
+    margin: 20px 0 20px 0;
+    font-size: 14px;
 }
 
 .cart_petama img {
@@ -29,7 +69,7 @@
 }
 
 .manfaat {
-    background-image: url('../../aset/bacground\ \(4\).png');
+    /* background-image: url('../../aset/bacground\ \(4\).png'); */
     width: 100vw;
     background-repeat: no-repeat;
     padding: 50px 0px 0px 0px;
@@ -63,7 +103,7 @@
 }
 
 .kandungan_gizi {
-    background-image: url('../../aset/bacground\ \(4\).png');
+    /* background-image: url('../../aset/bacground\ \(4\).png'); */
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
@@ -71,6 +111,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 80px 0 100px 0;
+    box-sizing: border-box;
+    
 }
 
 .zat_gizi {

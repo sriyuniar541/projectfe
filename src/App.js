@@ -8,6 +8,7 @@ import Register from "./pages/sigup/register";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AuthChecker from "./component/authchecker/auth_checker";
 import Jualan from "./pages/websiteJualanSusu/jualan";
+import './App.css'
 
 
 function App() {

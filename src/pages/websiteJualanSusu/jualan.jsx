@@ -1,25 +1,50 @@
 import React from "react";
 import profile from "../../aset/IMG-20230524-WA0009-removebg-preview.png";
 import milk from "../../aset/milk-g85f3fc3b6_1920.jpg";
+import milk_bacground from "../../aset/susu.png";
 import "./jualan.css";
 import Footer_jualan from "../../component/footer/footer_jualan";
 import Accordion from "react-bootstrap/Accordion";
+import Navbar from "../../component/navbar/navbar_jualan";
 
 const Jualan = () => {
   return (
-    <div className="">
+    <div className="page_jualan">
+      <div className="navbar_jualan">
+      <Navbar />
+      </div>
       <div className=" container jualan">
-        <div className="cart_petama col-lg-6 col-10">
-          <img src={profile} alt="card_1" className="img-fluid" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis non
-            est delectus itaque harum dicta. Hic doloribus distinctio, nam qui
-            totam minus iure iusto sapiente exercitationem illum. Officiis, sed
-            nobis.
-          </p>
+        <div className="row">
+          <div className=" col-lg-6 card_bacground_2">
+            <h2>Awali Hari Sehatmu degan Satu Gelas Susu kambing</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro a velit consequatur accusamus harum sint et vero amet, aspernatur nostrum. Suscipit debitis nesciunt culpa aperiam magnam eum voluptatum et totam!</p>
+            <button className="learn_more">Learn More</button>
+          </div>
+          <div className="card_bacground col-lg-6">
+            <img
+              src={milk_bacground}
+              alt="bacground_susu"
+              className="img-fluid"
+            />
+          </div>
         </div>
       </div>
-      <div className="container manfaat ">
+      <div className="cart_petama col-lg-6 offset-lg-3" id='about'>
+        <img src={profile} alt="card_1" className="img-fluid" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis esse
+          officiis excepturi blanditiis provident voluptate reprehenderit,
+          mollitia tenetur cum quasi quisquam. Dicta magnam laborum illo aut
+          ipsa sit a molestiae?
+        </p>
+        <div className="author_jualan">
+<p>Di Rangkum Oleh : </p>
+        <p className="text-secondary">Tri Sumasti R, S. Gz. RD</p>
+        </div>
+        
+        <button className="btn btn-success">Chat via Whatshapp</button>
+      </div>
+      <div className="container manfaat" id='manfaat'>
         <div className="list_manfaat col-10">
           <h2>MANFAAT</h2>
           <Accordion defaultActiveKey="">
@@ -238,7 +263,7 @@ const Jualan = () => {
           </Accordion>
         </div>
       </div>
-      <div className="container kandungan_gizi">
+      <div className="container kandungan_gizi" id='kandungan'>
         <div className="zat_gizi">
           <h2>KANDUNGAN ZAT GIZI</h2>
           <img src={milk} alt="card_1" className="img-fluid" />
