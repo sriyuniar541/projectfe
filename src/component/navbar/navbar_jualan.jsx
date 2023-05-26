@@ -5,9 +5,9 @@ import "./navbar.css";
 
 function NavbarLandingPage() {
   return (
-    <Navbar expand="lg" className="fixed-top nav_jualan" style={{ backgroundColor: 'rgba(175, 238, 238,0.5)'}} >
+    <Navbar expand="lg" className="fixed-top nav_jualan" style={{ backgroundColor: '#ffb3c6'}} >
       <Container className="container">
-        <Navbar.Brand href="#" style={{ color: 'white',fontSize:'bold'}} >HalloWebsite</Navbar.Brand>
+        <Navbar.Brand href="#" style={{ color: 'white',fontSize:'bold'}} >SobatEtawa</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

@@ -3,35 +3,40 @@
 
 .jualan {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    margin-bottom: 100px;
 }
 
 .page_jualan h2 {
     font-family: 'Potta One', sans-serif;
-    color : #AFEEEE;
+    color : #ffb3c6;
 }
 
 h2 {
     font-family: 'Potta One', sans-serif;
 }
 
-.learn_more {
-    background-color: #AFEEEE;
+.learn_more, .btn_whatshaap {
+    background-color: #ffb3c6;
     border: none;
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
     color: white;
-    
+}
 
+.btn_whatshaap:hover {
+    background-color: rgba(255, 179, 198,.8);
+    transition: 1s;
 }
 
 .card_bacground img {
-    width: 80%;
+    width: 300px;
+    /* height: 600px; */
 }
 
 .card_bacground {
@@ -42,10 +47,13 @@ h2 {
 .card_bacground_2 {
     box-sizing: border-box;
     padding: 60px;
+    display: flex;
+    align-items: center;
 }
 
-.cart_petama {
+.about {
     /* background-color: rgba(243, 240, 240, 0.8); */
+    width: 100vw;
     padding: 50px;
     border-radius: 0px 50px 0px 50px;
     text-align: center;
@@ -59,7 +67,7 @@ h2 {
     font-size: 14px;
 }
 
-.cart_petama img {
+.about img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -68,10 +76,18 @@ h2 {
     background-color: white;
 }
 
+.about button img {
+    background-color: #ffb3c6;
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    box-shadow: 0px 0px 0px rgb(236, 226, 226);
+}
+
 .manfaat {
     /* background-image: url('../../aset/bacground\ \(4\).png'); */
     width: 100vw;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     padding: 50px 0px 0px 0px;
     display: flex;
     justify-content: center;
@@ -86,6 +102,18 @@ h2 {
     box-shadow: 2px 3px 2px rgb(236, 226, 226);
     border: 1px solid rgba(185, 178, 178, 0.5);
     background-color: white;
+    padding: 0;
+}
+
+.list_manfaat .acordion p {
+    border : none ;
+    padding: 0;
+}
+
+.list_manfaat .acordion img {
+    width: 100px;
+    height: 80px;
+    margin-right: 20px;
 }
 
 .list_manfaat h2{

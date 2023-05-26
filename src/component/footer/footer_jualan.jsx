@@ -20,7 +20,7 @@ const Footer_jualan = () => {
             <h3>Ikuti Saya</h3>
             <div className="sosial_media">
               {/* <a href="https://www.facebook.com/beatric.tynn">Facebook</a> */}
-              <a href=" https://instagram.com/beatrictynn">Instagram</a>
+              <a href="https://instagram.com/rtrisumasti?igshid=MzRlODBiNWFlZA==">Instagram</a>
               {/* <a href="">Telegram</a>
               <a href="">Twiter</a> */}
             </div>
@@ -28,8 +28,9 @@ const Footer_jualan = () => {
           <div className="col-lg-4 mt-lg-0 mt-4">
             <h3>Tautan</h3>
             <div className="footer_content">
-              <a href="">Beranda</a>
-              <a href="">Artikel</a>
+              <a href="#about">About</a>
+              <a href="#manfaat">manfaat</a>
+              <a href="#kandungan">Kandungan</a>
             </div>
           </div>
         </div>
