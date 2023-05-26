@@ -30,13 +30,24 @@ h2 {
 }
 
 .btn_whatshaap:hover {
-    background-color: rgba(255, 179, 198,.8);
+    background-color: #fc81a0;
     transition: 1s;
 }
 
+@keyframes milkshake {
+    from {rotate: 1deg;}
+    to {rotate :10deg;}
+    /* from{ background-color: aqua;}
+    to{ background-color: grey;} */
+}
+
 .card_bacground img {
-    width: 300px;
-    /* height: 600px; */
+    width: 80%;
+    height: 620px;
+    animation-name: milkshake;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 
 .card_bacground {
@@ -48,8 +59,15 @@ h2 {
     box-sizing: border-box;
     padding: 60px;
     display: flex;
-    align-items: center;
+    align-items: end;
+    /* background-color: aqua; */
 }
+
+.card_bacground_2 p {
+    /* background-color: aqua; */
+    color :gray;
+    margin-top: 15px;
+ }
 
 .about {
     /* background-color: rgba(243, 240, 240, 0.8); */
@@ -62,8 +80,8 @@ h2 {
 }
 
 .author_jualan {
-    line-height: 10px;
-    margin: 20px 0 20px 0;
+    line-height: 5px;
+    margin: 25px 0 25px 0;
     font-size: 14px;
 }
 
@@ -163,4 +181,63 @@ h2 {
     width: 300px;
     height: 300px;
     border-radius: 50px 0 50px 0;
+}
+
+.whatshap_card img{
+    height: 30px; 
+    margin-right: 20px; 
+}
+
+.whatshap_card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+
+@media (max-width : 768px) { 
+    .jualan { 
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card_bacground {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card_bacground_2 {
+        text-align: center;
+    }
+
+    .card_bacground img {
+       display: none;
+    }
+
+    .image_hp {
+        background-image: url('../../aset/susu\ \(2\).png');
+        /* background-color: aqua; */
+        /* background-size: contain; */
+        background-size: 200px 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 250px;
+    }
+
+    @keyframes button {
+        from{ background-color: #ffb3c6;}
+        to{ background-color: #df5174;}
+    }
+
+    .learn_more {
+        transition: 1s;
+        animation-name: button;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+
 }

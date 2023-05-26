@@ -1,7 +1,7 @@
 import React from "react";
 import profile from "../../aset/IMG-20230524-WA0009-removebg-preview.png";
 import whatshaap from "../../aset/whatshaap.png";
-import milk from "../../aset/milk-g85f3fc3b6_1920.jpg";
+import milk from "../../aset/susu.png";
 import milk_bacground from "../../aset/susu (2).png";
 import "./jualan.css";
 import manfaat_1 from "../../aset/manfaat (2).png";
@@ -32,18 +32,23 @@ const Jualan = () => {
       </div>
       <div className=" container jualan">
         <div className="row">
-          <div className=" col-lg-6 card_bacground_2">
+          <div className=" col-lg-6 col-10  card_bacground_2 offset-lg-0 offset-1">
             <div>
-            <h2>Awali Hari Sehatmu degan Satu Gelas Susu kambing</h2>
-            <p>
-            Mengapa? karena susu kambing mengandung zat gizi yang lengkap meliputi karbohidrat, vitamin, mineral, elektrolit, unsur kimiawi, protein, asam lemak esensial yang bermanfaat bagi tubuh cocok untuk siapa saja, mulai dari anak-anak, remaja, orang dewasa hingga usila
-            </p>
-            <a href="#manfaat">
-              <button className="learn_more">Learn More</button>
-            </a> 
+              <h2>Awali Hari Sehatmu degan Satu Gelas Susu kambing</h2>
+              <div className="image_hp"></div>
+              <p>
+                Mengapa? karena susu kambing mengandung zat gizi yang lengkap
+                meliputi karbohidrat, vitamin, mineral, elektrolit, unsur
+                kimiawi, protein, asam lemak esensial yang bermanfaat bagi tubuh
+                cocok untuk siapa saja, mulai dari anak-anak, remaja, orang
+                dewasa hingga usila
+              </p>
+              <a href="#manfaat">
+                <button className="learn_more">Learn More</button>
+              </a>
             </div>
           </div>
-          <div className="card_bacground col-lg-6">
+          <div className="card_bacground col-lg-6 col-10 offset-lg-0 offset-1">
             <img
               src={milk_bacground}
               alt="bacground_susu"
@@ -55,20 +60,21 @@ const Jualan = () => {
       <div className="about col-lg-6 offset-lg-3" id="about">
         <img src={profile} alt="card_1" className="img-fluid" />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis esse
-          officiis excepturi blanditiis provident voluptate reprehenderit,
-          mollitia tenetur cum quasi quisquam. Dicta magnam laborum illo aut
-          ipsa sit a molestiae?
+          Susu kambing adalah makanan paling lengkap yang diketahui. Ia
+          mengandung vitamin, mineral, elektrolit, unsur kimiawi, enzim,
+          protein, dan asam lemak yang mudah dimanfaatkan tubuh . Bahkan, tubuh
+          kita dapat mencerna susu kambing hanya dalam 20 menit. Bandingkan
+          dengan 2-3 jam yang dibutuhkan untuk mencerna susu sapi.
         </p>
         <div className="author_jualan">
           <p>Di Rangkum Oleh : </p>
           <p className="text-secondary">Tri Sumasti R, S. Gz. RD</p>
-        </div> 
-        <a href="https://wa.me/+6289674498437?text=Sayainginkonsultasilebihlanjut">
+        </div>
+        {/* <a href="https://wa.me/+6289674498437?text=Saya%ingin%konsultasi%lebih%lanjut%">
         <button className="btn_whatshaap">
         <img src={whatshaap} alt="whatshaap" className=" img-fluid" />
            Chat via Whatshapp
-         </button> </a>
+         </button> </a> */}
       </div>
       <div className="container manfaat" id="manfaat">
         <div className="list_manfaat col-10">
@@ -76,7 +82,7 @@ const Jualan = () => {
           <Accordion defaultActiveKey="">
             <Accordion.Item className="acordion" eventKey="0">
               <Accordion.Header>
-                <img src={manfaat_1} alt='manfaat_1' />
+                <img src={manfaat_1} alt="manfaat_1" />
                 Baik untuk jantung
               </Accordion.Header>
               <Accordion.Body>
@@ -124,9 +130,9 @@ const Jualan = () => {
             </Accordion.Item>
             <Accordion.Item className="acordion" eventKey="1">
               <Accordion.Header>
-              <img src={manfaat_2} alt='manfaat_2' />
+                <img src={manfaat_2} alt="manfaat_2" />
                 Menjaga kesehatan sel tubuh
-                </Accordion.Header>
+              </Accordion.Header>
               <Accordion.Body>
                 Selain membantu mengendalikan tekanan darah, kalium pada susu
                 kambing ditemukan pada banyak sel tubuh, misalnya sel otot, sel
@@ -142,7 +148,7 @@ const Jualan = () => {
             </Accordion.Item>
             <Accordion.Item className="acordion" eventKey="2">
               <Accordion.Header>
-              <img src={manfaat_3} alt='manfaat_3' />
+                <img src={manfaat_3} alt="manfaat_3" />
                 Mendukung kesehatan sistem pencernaan
               </Accordion.Header>
               <Accordion.Body>
@@ -175,9 +181,9 @@ const Jualan = () => {
             </Accordion.Item>
             <Accordion.Item className="acordion" eventKey="3">
               <Accordion.Header>
-              <img src={manfaat_4} alt='manfaat_4' />
+                <img src={manfaat_4} alt="manfaat_4" />
                 Melawan inflamasi
-                </Accordion.Header>
+              </Accordion.Header>
               <Accordion.Body>
                 Jika kita mengalami gangguan kesehatan yang disebabkan oleh
                 inflamasi atau peradangan dan alergi, maka minum susu kambing
@@ -193,7 +199,7 @@ const Jualan = () => {
             </Accordion.Item>
             <Accordion.Item className="acordion" eventKey="4">
               <Accordion.Header>
-              <img src={manfaat_5} alt='manfaat_5' />
+                <img src={manfaat_5} alt="manfaat_5" />
                 Meningkatkan pH dalam tubuh yang memperkuat kekebalan tubuh
               </Accordion.Header>
               <Accordion.Body>
@@ -218,9 +224,9 @@ const Jualan = () => {
             </Accordion.Item>
             <Accordion.Item className="acordion" eventKey="5">
               <Accordion.Header>
-              <img src={manfaat_6} alt='manfaat_6' />
+                <img src={manfaat_6} alt="manfaat_6" />
                 Membantu tidur lebih nyenyak
-                </Accordion.Header>
+              </Accordion.Header>
               <Accordion.Body>
                 Asam amino triptofan yang terkandung pada susu kambing akan
                 membantu tubuh memproduksi hormon serotonin. Hormon ini tidak
@@ -233,7 +239,7 @@ const Jualan = () => {
             </Accordion.Item>
             <Accordion.Item className="acordion" eventKey="6">
               <Accordion.Header>
-              <img src={manfaat_7} alt='manfaat_7' />
+                <img src={manfaat_7} alt="manfaat_7" />
                 Manfaat susu kambing untuk kulit
               </Accordion.Header>
               <Accordion.Body>
@@ -255,8 +261,8 @@ const Jualan = () => {
             </Accordion.Item>
             <Accordion.Item className="acordion" eventKey="7">
               <Accordion.Header>
-              <img src={manfaat_8} alt='manfaat_1' />
-                Mencegah Pengeroposan Tulang dan Anemia
+                <img src={manfaat_8} alt="manfaat_1" />
+                Mencegah Pengeroposan Tulang, nyeri sendi dan Anemia
               </Accordion.Header>
               <Accordion.Body>
                 Tak hanya untuk anak-anak dan orang dewasa, susu kambing ini
@@ -299,7 +305,7 @@ const Jualan = () => {
                 sesudah olahraga, serta di malam hari untuk membantu tidur lebih
                 nyenyak. Jangan lupa untuk memastikan bahwa susu kambing yang
                 Anda konsumsi sudah melewati proses pasteurisasi, sehingga
-                keamanannya lebih terjamin. 13/04/2022
+                keamanannya lebih terjamin.
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
@@ -321,6 +327,18 @@ const Jualan = () => {
             <li> Natrium: 35 miligram</li>
             <li>Kalium: 160 miligram</li>
           </ul>
+        </div>
+      </div>
+      <div className="container col-lg-6 whatshap_card">
+        <div>
+          <h2>Punya pertanyaan lebih lanjut?</h2>
+          <p>klik link dibawah ini untuk konsultasi gratis</p>
+          <a href="https://wa.me/+6289674498437?text=Saya%ingin%konsultasi%lebih%lanjut%">
+            <button className="btn_whatshaap">
+              <img src={whatshaap} alt="whatshaap" className=" img-fluid" />
+              Chat via Whatshapp
+            </button>{" "}
+          </a>
         </div>
       </div>
       <Footer_jualan />

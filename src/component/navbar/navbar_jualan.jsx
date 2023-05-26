@@ -7,7 +7,7 @@ function NavbarLandingPage() {
   return (
     <Navbar expand="lg" className="fixed-top nav_jualan" style={{ backgroundColor: '#ffb3c6'}} >
       <Container className="container">
-        <Navbar.Brand href="#" style={{ color: 'white',fontSize:'bold'}} >SobatEtawa</Navbar.Brand>
+        <Navbar.Brand href="#" ><b style={{ color: 'white'}} >SobatEtawa</b></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

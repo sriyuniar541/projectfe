@@ -37,7 +37,7 @@ function App() {
             element={<PageAti1 />}
           />
           <Route
-            path="/susuEtawa"
+            path="/manfaatSusukambingBagiKesehatan"
             element={<Jualan />}
           />
           <Route path="*" element={<page not Found />} />
