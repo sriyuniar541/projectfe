@@ -332,7 +332,7 @@ const Jualan = () => {
       <div className="container col-lg-6 whatshap_card">
         <div>
           <h2>Punya pertanyaan lebih lanjut?</h2>
-          <p>klik link dibawah ini untuk konsultasi gratis</p>
+          <p>klik link dibawah ini untuk konsultasi gratis..!</p>
           <a href="https://wa.me/+6289674498437?text=Saya%20ingin%20konsultasi%20lebih%20lanjut">
             <button className="btn_whatshaap">
               <img src={whatshaap} alt="whatshaap" className=" img-fluid" />
