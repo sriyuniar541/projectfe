@@ -45,7 +45,6 @@ h2 {
 .card_bacground img {
   width: 80%;
   rotate: -90deg;
-  /* height: 100%; */
   animation-name: milkshake;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -57,6 +56,7 @@ h2 {
   display: flex;
   justify-content: end;
   align-items: start;
+  overflow: hidden;
 }
 
 .card_bacground_2 {
@@ -238,16 +238,17 @@ h2 {
   }
 
   .brosur {
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
-    background-image: url("./../../aset/brosur.png");
+    background-image: url("./../../aset/png_20230701_080828_0000.png");
     background-position-y: -15px;
     background-size: cover;
-    margin-top: 50px;
+    margin-top: 55px;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    height: 500px;
+    height: 74vh;
+    
   }
 }
 
