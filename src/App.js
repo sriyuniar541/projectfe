@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AuthChecker from "./component/authchecker/auth_checker";
 import Jualan from "./pages/websiteJualanSusu/jualan";
 import './App.css'
+import Jualan2 from "./pages/websiteJualanSusu/jualan2";
 
 
 function App() {
@@ -39,6 +40,10 @@ function App() {
           <Route
             path="/manfaatSusukambingBagiKesehatan"
             element={<Jualan />}
+          />
+          <Route
+            path="/websitepembeliansusukambingetawa"
+            element={<Jualan2 />}
           />
           <Route path="*" element={<page not Found />} />
         </Routes>
