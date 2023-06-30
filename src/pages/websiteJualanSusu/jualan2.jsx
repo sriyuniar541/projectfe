@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import brosur from "../../aset/png_20230701_070103_0000.png";
-import profile from "../../aset/IMG-20230524-WA0009-removebg-preview.png";
+// import profile from "../../aset/IMG-20230524-WA0009-removebg-preview.png";
 import whatshaap from "../../aset/whatshaap.png";
 import milk from "../../aset/susu.png";
-import milk_bacground from "../../aset/susu (2).png";
+// import milk_bacground from "../../aset/susu (2).png";
 import "./jualan.css";
 import manfaat_1 from "../../aset/manfaat (2).png";
 import manfaat_2 from "../../aset/manfaat (3).png";
@@ -26,40 +26,42 @@ import Navbar from "../../component/navbar/navbar_jualan _2";
 import { Link } from "react-router-dom";
 
 const Jualan2 = () => {
-
-  const [nama, setNama] = useState()
+  const [nama, setNama] = useState();
   const [address, setAddress] = useState({
-    'jalan' : '',
-    'RT' : '',
-    'RW' : '',
-    'kabupaten' : '',
-    'kecamatan' : '',
-    'kota' : '',
-    'provinsi' : ''
-  })
-  const [no_whatsap, setwhatshapp] = useState()
-  const [jumlah, setJumlah] = useState(1)
+    jalan: "",
+    RT: "",
+    RW: "",
+    kabupaten: "",
+    kecamatan: "",
+    kota: "",
+    provinsi: "",
+  });
+  const [no_whatsap, setwhatshapp] = useState();
+  const [jumlah, setJumlah] = useState(1);
 
   const addressDetail = (e) => {
-    const name = e.target.name 
-    const value = e.target.value 
+    const name = e.target.name;
+    const value = e.target.value;
     setAddress({
-      ...address, [name ] : value
-    })
-  }
+      ...address,
+      [name]: value,
+    });
+  };
 
   return (
     <div className="page_jualan">
       <div className="navbar_jualan">
         <Navbar />
       </div>
-      <div className="brosur">
-      </div>
+      <div className="brosur"></div>
       <div className=" container jualan">
         <div className="row">
           <div className=" col-lg-6 col-10  card_bacground_2 offset-lg-0 offset-1">
             <div>
-              <h2>Awali Hari Sehatmu degan Satu Gelas Susu kambing etawa dari <strong>Qirath</strong></h2>
+              <h2>
+                Awali Hari Sehatmu degan Satu Gelas Susu kambing etawa dari{" "}
+                <strong>Qirath</strong>
+              </h2>
               <div className="image_hp"></div>
               <p>
                 Mengapa? karena susu kambing mengandung zat gizi yang lengkap
@@ -74,11 +76,7 @@ const Jualan2 = () => {
             </div>
           </div>
           <div className="card_bacground col-lg-6 col-10 offset-lg-0 offset-1">
-            <img
-              src={brosur}
-              alt="bacground_susu"
-              className="img-fluid"
-            />
+            <img src={brosur} alt="bacground_susu" className="img-fluid" />
           </div>
         </div>
       </div>
@@ -335,9 +333,9 @@ const Jualan2 = () => {
           </ul>
         </div>
       </div>
-      <div id='order'></div>
-      <div className="container col-lg-6 whatshap_card" >
-        <div >
+      <div id="order"></div>
+      <div className="container col-lg-6 whatshap_card">
+        <div>
           <h2>Pesan Sekarang...!</h2>
           <div>
             {/* <form className="form_pembelian">
@@ -369,15 +367,20 @@ const Jualan2 = () => {
              
               <label>Provinsi <span className="text-danger">*</span></label>
               <input placeholder="" className="form-control" type="text" value={address.provinsi} name='provinsi' onChange={addressDetail} required/> */}
-             
-             <h2 className="susu_price"><strong>Rp 35.000</strong></h2>
-               <p>klik link dibawah ini untuk order via whatshapp</p>
-              <a target="_blank" href= "https://wa.me/+6289674498437?text=Saya%20ingin%20memesan%20susu%20kambing%20etawa%0A%0ADetail%20pesanan___%0A%20%20%20%20Nama%20Lengkap%20%20%20%20%20%20%20%3A%0A%20%20%20%20Nomor%20Hp%2FWhatsApp%20%20%3A%20%0A%20%20%20%20Jumlah%20%20%20%20%20%20%20%20%20%20%20%20%20%3A%0A%20%20%20%20Alamat%20lengkap%20%0A%20%20%20%20%20%20Jalan%20%20%20%20%20%20%3A%20%0A%20%20%20%20%20%20RT%2FRW%20%20%20%20%20%20%3A%20%0A%20%20%20%20%20%20Kecamatan.%20%3A%20%0A%20%20%20%20%20%20kelurahan%20%20%3A%20%0A%20%20%20%20%20%20Kota%20%20%20%20%20%20%20%3A%20%0A%20%20%20%20%20%20Provinsi%20%20%20%3A%20%0A%0AMohon%20lengkapi%20data-data%20di%20atas%0ATerima%20kasih...!%20%20"> 
-                <button className="btn_whatshaap">
+
+            <h2 className="susu_price">
+              <strong>Rp 35.000</strong>
+            </h2>
+            <p>klik link dibawah ini untuk order via whatshapp</p>
+            <a
+              target="_blank"
+              href="https://wa.me/+6289674498437?text=Saya%20ingin%20memesan%20susu%20kambing%20etawa%0A%0ADetail%20pesanan___%0A%20%20%20%20Nama%20Lengkap%20%20%20%20%20%20%20%3A%0A%20%20%20%20Nomor%20Hp%2FWhatsApp%20%20%3A%20%0A%20%20%20%20Jumlah%20%20%20%20%20%20%20%20%20%20%20%20%20%3A%0A%20%20%20%20Alamat%20lengkap%20%0A%20%20%20%20%20%20Jalan%20%20%20%20%20%20%3A%20%0A%20%20%20%20%20%20RT%2FRW%20%20%20%20%20%20%3A%20%0A%20%20%20%20%20%20Kecamatan.%20%3A%20%0A%20%20%20%20%20%20kelurahan%20%20%3A%20%0A%20%20%20%20%20%20Kota%20%20%20%20%20%20%20%3A%20%0A%20%20%20%20%20%20Provinsi%20%20%20%3A%20%0A%0AMohon%20lengkapi%20data-data%20di%20atas%0ATerima%20kasih...!%20%20"
+            >
+              <button className="btn_whatshaap">
                 <img src={whatshaap} alt="whatshaap" className=" img-fluid" />
-                  Pesan Sekarang
-                </button>
-                </a> 
+                Pesan Sekarang
+              </button>
+            </a>
             {/* </form> */}
           </div>
         </div>

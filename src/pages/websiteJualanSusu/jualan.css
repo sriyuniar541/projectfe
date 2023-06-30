@@ -1,300 +1,285 @@
-@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
 
 .jualan {
-    width: 100vw;
-    height: 100vh;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-    /* margin-bottom: 100px; */
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
 }
 
 .page_jualan h2 {
-    font-family: 'Potta One', sans-serif;
-    color : #ffb3c6;
+  font-family: "Potta One", sans-serif;
+  color: #ffb3c6;
 }
 
 h2 {
-    font-family: 'Potta One', sans-serif;
+  font-family: "Potta One", sans-serif;
 }
 
-.learn_more, .btn_whatshaap {
-    background-color: #ffb3c6;
-    border: none;
-    padding: 10px 20px 10px 20px;
-    border-radius: 10px;
-    color: white;
+.learn_more,
+.btn_whatshaap {
+  background-color: #ffb3c6;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  color: white;
 }
 
 .btn_whatshaap:hover {
-    background-color: #fc81a0;
-    transition: 1s;
+  background-color: #fc81a0;
+  transition: 1s;
 }
 
 @keyframes milkshake {
-    from {rotate: -80deg;}
-    to {rotate :-100deg;}
+  from {
+    rotate: -80deg;
+  }
+  to {
+    rotate: -100deg;
+  }
 }
 
 .card_bacground img {
-    width: 80%;
-    rotate:  -90deg;
-    /* height: 100%; */
-    animation-name: milkshake;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    margin-top: -130px;
+  width: 80%;
+  rotate: -90deg;
+  /* height: 100%; */
+  animation-name: milkshake;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  margin-top: -130px;
 }
 
 .card_bacground {
-    display: flex;
-    justify-content: end;
-    align-items: start;
+  display: flex;
+  justify-content: end;
+  align-items: start;
 }
 
 .card_bacground_2 {
-    box-sizing: border-box;
-    padding: 60px;
-    display: flex;
-    align-items: center;
-    /* background-color: aqua; */
+  box-sizing: border-box;
+  padding: 60px;
+  display: flex;
+  align-items: center;
 }
 
 .card_bacground_2 p {
-    color :gray;
-    margin-top: 15px;
- }
+  color: gray;
+  margin-top: 15px;
+}
 
 .about {
-    /* background-color: rgba(243, 240, 240, 0.8); */
-    width: 100vw;
-    padding: 50px;
-    border-radius: 0px 50px 0px 50px;
-    text-align: center;
-    box-shadow: 1px 4px 4px rgba(187, 180, 180,.8);
-    border: 1px solid rgb(241, 233, 233);
+  width: 100vw;
+  padding: 50px;
+  border-radius: 0px 50px 0px 50px;
+  text-align: center;
+  box-shadow: 1px 4px 4px rgba(187, 180, 180, 0.8);
+  border: 1px solid rgb(241, 233, 233);
 }
 
 .author_jualan {
-    line-height: 5px;
-    margin: 25px 0 25px 0;
-    font-size: 14px;
+  line-height: 5px;
+  margin: 25px 0 25px 0;
+  font-size: 14px;
 }
 
 .about img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: 3px 5px 5px rgb(236, 226, 226);
-    border: 1px solid rgba(241, 227, 227,.5);
-    background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 3px 5px 5px rgb(236, 226, 226);
+  border: 1px solid rgba(241, 227, 227, 0.5);
+  background-color: white;
 }
 
 .about button img {
-    background-color: #ffb3c6;
-    width: 30px;
-    height: auto;
-    margin-right: 10px;
-    box-shadow: 0px 0px 0px rgb(236, 226, 226);
+  background-color: #ffb3c6;
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+  box-shadow: 0px 0px 0px rgb(236, 226, 226);
 }
 
 .manfaat {
-    /* background-image: url('../../aset/bacground\ \(4\).png'); */
-    width: 100vw;
-    /* background-repeat: no-repeat; */
-    padding: 50px 0px 0px 0px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
+  width: 100vw;
+  padding: 50px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
 .list_manfaat {
-    text-align: justify;
+  text-align: justify;
 }
 
 .list_manfaat .acordion {
-    box-shadow: 2px 3px 2px rgb(236, 226, 226);
-    border: 1px solid rgba(185, 178, 178, 0.5);
-    background-color: white;
-    padding: 0;
+  box-shadow: 2px 3px 2px rgb(236, 226, 226);
+  border: 1px solid rgba(185, 178, 178, 0.5);
+  background-color: white;
+  padding: 0;
 }
 
 .list_manfaat .acordion p {
-    border : none ;
-    padding: 0;
+  border: none;
+  padding: 0;
 }
 
 .list_manfaat .acordion img {
-    width: 100px;
-    height: 80px;
-    margin-right: 20px;
-}
-
-.list_manfaat h2{
-    text-align: center;
-}
-
-.list_manfaat p{
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 10px;
+  width: 100px;
+  height: 80px;
+  margin-right: 20px;
 }
 
 .list_manfaat h2 {
-    margin: 10px 0 20px 0;
+  text-align: center;
+}
+
+.list_manfaat p {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.list_manfaat h2 {
+  margin: 10px 0 20px 0;
 }
 
 .kandungan_gizi {
-    /* background-image: url('../../aset/bacground\ \(4\).png'); */
-    width: 100vw;
-    height: 100vh;
-    background-repeat: no-repeat;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0 60px 0;
-    box-sizing: border-box;
-    
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 60px 0;
+  box-sizing: border-box;
 }
 
 .zat_gizi {
-    padding: 10px; 
+  padding: 10px;
 }
 
-.zat_gizi h2{
-    padding: 50px 0 30px 0; 
-
+.zat_gizi h2 {
+  padding: 50px 0 30px 0;
 }
 
-.zat_gizi ul{
-   margin-top: 20px;
-   text-align: justify;
-   background-color: rgba(255, 255, 255,.5);
+.zat_gizi ul {
+  margin-top: 20px;
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .zat_gizi img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50px 0 50px 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50px 0 50px 0;
 }
 
-.whatshap_card img{
-    height: 30px; 
-    margin-right: 20px; 
+.whatshap_card img {
+  height: 30px;
+  margin-right: 20px;
 }
 
 .whatshap_card {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .jualan {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
-    margin-top: 100px;
+  }
+
+  .card_bacground {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card_bacground_2 {
     text-align: center;
+  }
+
+  .card_bacground img {
+    display: none;
+  }
+
+  .image_hp {
+    background-image: url("../../aset/susu\ \(2\).png");
+    background-size: 200px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+  }
+
+  @keyframes button {
+    from {
+      background-color: #ffb3c6;
+    }
+    to {
+      background-color: #df5174;
+    }
+  }
+
+  .learn_more {
+    transition: 1s;
+    animation-name: button;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+
+  .brosur {
+    width: 100vw;
+    overflow: hidden;
+    background-image: url("./../../aset/brosur.png");
+    background-position-y: -15px;
+    background-size: cover;
+    margin-top: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+  }
 }
-
-
-
-@media (max-width : 768px) { 
-    .jualan { 
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .card_bacground {
-        display: flex;
-        justify-content: center;
-    }
-
-    .card_bacground_2 {
-        text-align: center;
-    }
-
-    .card_bacground img {
-       display: none;
-    }
-
-    .image_hp {
-        background-image: url('../../aset/susu\ \(2\).png');
-        /* background-color: aqua; */
-        /* background-size: contain; */
-        background-size: 200px 250px;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 250px;
-    }
-
-    @keyframes button {
-        from{ background-color: #ffb3c6;}
-        to{ background-color: #df5174;}
-    }
-
-    .learn_more {
-        transition: 1s;
-        animation-name: button;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate-reverse;
-    }
-
-    .brosur {
-        width: 100vw;
-        overflow: hidden;
-        background-image: url('./../../aset/brosur.png');
-        background-position-y: -15px;
-        background-size: cover; 
-        margin-top: 50px; 
-        overflow: hidden; 
-        display: flex;
-        justify-content: center;
-        height: 500px;
-    }
-}
-
-
 
 /* website jualan2 */
 
 .form_pembelian {
-    padding: 50px 10px 50px 10px;
-    box-shadow: 2px 3px 2px rgb(236, 226, 226);
-    border: 1px  solid rgb(247, 238, 238);
-    text-align: left;
+  padding: 50px 10px 50px 10px;
+  box-shadow: 2px 3px 2px rgb(236, 226, 226);
+  border: 1px solid rgb(247, 238, 238);
+  text-align: left;
 }
 
 .form_pembelian input {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 @keyframes price {
-    from{ color: #ffb3c6; }
-    to{ color: #df5174; }
+  from {
+    color: #ffb3c6;
+  }
+  to {
+    color: #df5174;
+  }
 }
 
 .susu_price {
-    box-shadow: 5px 5px 10px #ffb3c6;
-    border : 1px solid rgb(230, 223, 223);
-    padding: 10px;
-    border-radius: 10px;
-    animation-name: price;
-    animation-duration: 0.2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+  box-shadow: 5px 5px 10px #ffb3c6;
+  border: 1px solid rgb(230, 223, 223);
+  padding: 10px;
+  border-radius: 10px;
+  animation-name: price;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
